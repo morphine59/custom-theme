@@ -1,0 +1,49 @@
+<div style="margin-top: 16px;"></div>
+<details><summary><strong>&gt; View Compatible Models</strong></summary>
+<div class="table-responsive">
+<table class="vehicle-table" style="min-width: 600px;">
+<tr>
+<th>Year</th>
+<th>Make</th>
+<th>Model</th>
+<th>Drivetrain/Detail</th>
+</tr>
+<tr>
+<td>2005</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>Volkswagen</td>
+<td>Jetta</td>
+<td>FWD</td>
+</tr>
+</table>
+</div>
+</details>
