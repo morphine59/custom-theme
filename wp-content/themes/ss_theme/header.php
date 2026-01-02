@@ -9,15 +9,22 @@
 <body <?php body_class(); ?>>
 
 <header class="site-header">
-    <nav class="main-navigation">
+    <div class="container">
+        <div class="logo">
+            <a href="<?php echo esc_url( home_url('/') ); ?>">
+                Sunil Budha
+            </a>
+        </div>
 
-        <?php
-        wp_nav_menu( array(
-            'theme_location' => 'primary_menu',
-            'menu_class'     => 'primary-menu',
-            'container'      => false,
-        ) );
-        ?>
-
-    </nav>
+        <nav class="site-navigation" aria-label="Primary Menu">
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'primary_menu',
+                'menu_class'     => 'nav-menu',
+                'container'      => false,
+                'depth'          => 1,
+            ) );
+            ?>
+        </nav>
+    </div>
 </header>

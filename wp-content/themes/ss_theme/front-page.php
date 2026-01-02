@@ -1,22 +1,8 @@
-<?php
-get_header();
-echo "apple";
-?>
+<?php get_header(); ?>
 
-<main>
-  <h1>Theme is working</h1>
-
-  <?php
-  if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-      the_title('<h2>', '</h2>');
-      the_content();
-    endwhile;
-  else :
-    echo '<p>No content found</p>';
-  endif;
-  ?>
+<main class="site-content">
+    <h1>Welcome to my portfolio</h1>
+    <p>This is my landing page.</p>
 </main>
 
-<?php
-get_footer();
+<?php get_footer(); ?>
