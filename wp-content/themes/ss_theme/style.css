@@ -3,50 +3,148 @@ Theme Name: SS Theme
 Author: Sunil
 Version: 1.0
 */
-.site-header {
-  background: #111;
-  padding: 15px 0;
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* GLOBAL CONTAINER */
 .container {
-  max-width: 1100px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* =====================
+   HEADER / NAVBAR
+===================== */
+
+.site-header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+body.admin-bar .site-header {
+  top: 52px;
+}
+
+.header-inner {
+  background: #4fcb1a;
+  padding: 14px 55px;
+  /* 30px * 1.15 = 34.5px for 15% wider left/right padding */
+  border-radius: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 30px;
 }
 
+/* Logo */
 .logo a {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
 }
 
+/* Menu */
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  gap: 25px;
 }
 
 .nav-menu li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.nav-menu li a:hover,
+.nav-menu li.current-menu-item a {
+  opacity: 1;
+}
+
+/* =====================
+   SECTIONS
+===================== */
+
+section {
+  padding: 100px 0;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero h1 span {
+  color: #00bcd4;
+}
+
+.hero p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #00bcd4;
   color: #fff;
   text-decoration: none;
+  border-radius: 30px;
 }
 
-.nav-menu li a:hover {
-  text-decoration: underline;
-}
-.nav-menu li.current-menu-item a,
-.nav-menu li.current_page_item a {
-  border-bottom: 2px solid #fff;
-  padding-bottom: 4px;
+/* SKILLS */
+.skills-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
+.skills-list li {
+  background: #fff;
+  padding: 10px 15px;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  background: #00bcd4;
+  color: #fff;
+  text-align: center;
 }
